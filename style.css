@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background: hsl(226, 43%, 10%);
+    font-family: "Rubik", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-navigation{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.user-info{
+    background: hsl(246, 80%, 60%);
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    align-items: center;
+}
+
+.user-img{
+    width: 40px;
+    margin-right: 10px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+}
+
+.user-info p{
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+}
+
+.user-info .user-name{
+    font-size: 16px;
+    color: #fff;
+}
+
+.timeframes-card{
+    background: hsl(235, 46%, 20%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 15px 20px;
+}
+
+.timeframes-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+a,li{
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+li.active{
+    color: #fff;
+}
+
+.card-tags-container{
+
+}
+
+.card-tracker{
+    border-radius: 8px;
+}
+
+.card-tracker:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.hero-container{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.hero-container img{
+    width: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.hero-work{
+    background: hsl(15, 100%, 70%);
+}
+
+.hero-play{
+    background:  hsl(195, 74%, 62%);
+}
+
+.hero-study{
+    background: hsl(348, 100%, 68%);
+}
+
+.hero-exercice{
+    background: hsl(145, 58%, 55%);
+    padding-bottom: 10px;
+}
+
+.hero-social{
+    background: hsl(264, 64%, 52%);
+}
+
+.hero-care{
+    background: hsl(43, 84%, 65%);
+}
+
+.card-tag{
+    background: hsl(235, 46%, 20%);
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+}
+
+.card-tag:hover{
+    background:  hsl(235, 40%, 31%);
+}
+
+.menu-tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-tag{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.time-tracked{
+    display: flex;
+    justify-content: space-between;
+}
+
+.current{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.previous{
+    font-weight: 300;
+    color:  hsl(236, 100%, 87%);
+    font-size: 12px;
+}
