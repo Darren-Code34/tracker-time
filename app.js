@@ -80,6 +80,4 @@ function updateTimeframe(data){
             tabPreviousTimesTrackers[i].textContent = `Last Day - ${data[i].timeframes.monthly.previous}hrs`
         }
     }
-
-    
 }
