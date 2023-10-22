@@ -1,3 +1,5 @@
+/* mobil design */
+
 *{
     padding: 0;
     margin: 0;
@@ -132,6 +134,10 @@ li.active{
     top: -15px;
 }
 
+.card-tag.social{
+    top: -30px;
+}
+
 .card-tag:hover{
     background:  hsl(235, 40%, 31%);
 }
@@ -167,4 +173,116 @@ li.active{
     font-weight: 300;
     color:  hsl(236, 100%, 87%);
     font-size: 12px;
+}
+
+.attribution{
+    color: gray;
+    font-size: 20px;
+}
+
+.attribution a{
+    color: #fff;
+}
+
+/* Responsive design */
+
+@media screen and (min-width: 600px){
+
+    .card-navigation{
+        margin-bottom: 25px;
+    }
+    .timeframes-navigation{
+        justify-content: space-around;
+    }
+    .user-img{
+        width: 60px;
+    }
+
+    .user-info p{
+        font-size: 14px;
+        font-weight: 300;
+        color: hsl(236, 100%, 87%);
+    }
+    
+    .user-info .user-name{
+        font-size: 22px;
+        color: #fff;
+    }
+
+    a,li{
+        font-size: 18px;
+    }
+
+    .card-tags-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card-tracker:not(:last-child){
+        margin-bottom: 0px;
+    }
+
+    .hero-container img{
+        width: 50px;
+    }
+    .hero-exercice{
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .time-tracked{
+        flex-direction: column;
+    }
+
+    .current{
+        margin-bottom: 8px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        padding-top: 100px;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 250px 600px;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        margin-bottom: 150px;
+    }
+
+    .user-info{
+        flex-direction: column;
+    }
+
+    .user-img{
+        align-self: flex-start;
+        margin-bottom: 30px;
+        width: 60px;
+    }
+
+    .user-info p{
+        align-self: flex-start;
+        width: 80px;
+        line-height: 1.3;
+        margin-bottom: 40px;
+    }
+
+    .user-name{
+        font-size: 30px;
+    }
+
+    .timeframes-navigation{
+        flex-direction: column;
+    }
+
+    .timeframes-link:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .card-tags-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
